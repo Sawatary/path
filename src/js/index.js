@@ -36,7 +36,6 @@ document.getElementById('toggleBtn').addEventListener('click', function () {
   const width = window.innerWidth
 
   if (width >= 1440) {
-    // Показать/скрыть слайды с 9 по 10
     const hiddenSlides1440 = document.querySelectorAll('.hidden-slide-768')
     hiddenSlides1440.forEach((slide) => {
       slide.style.display =
@@ -45,7 +44,6 @@ document.getElementById('toggleBtn').addEventListener('click', function () {
           : 'none'
     })
   } else {
-    // Показать/скрыть слайды с 7 по 8
     const hiddenSlides768 = document.querySelectorAll('.hidden-slide')
     hiddenSlides768.forEach((slide) => {
       slide.style.display =
@@ -55,7 +53,6 @@ document.getElementById('toggleBtn').addEventListener('click', function () {
     })
   }
 
-  // Переключаем текст кнопки
   this.textContent =
     this.textContent === 'Показать еще' ? 'Скрыть' : 'Показать еще'
 })
@@ -64,7 +61,6 @@ document.getElementById('toggleBtn2').addEventListener('click', function () {
   const width = window.innerWidth
 
   if (width >= 1440) {
-    // Показать/скрыть слайды с 9 по 10
     const hiddenSlides1440 = document.querySelectorAll(
       '.hidden-technology-1440'
     )
@@ -75,7 +71,6 @@ document.getElementById('toggleBtn2').addEventListener('click', function () {
           : 'none'
     })
   } else {
-    // Показать/скрыть слайды с 7 по 8
     const hiddenSlides768 = document.querySelectorAll('.hidden-technology')
     hiddenSlides768.forEach((slide) => {
       slide.style.display =
@@ -85,7 +80,6 @@ document.getElementById('toggleBtn2').addEventListener('click', function () {
     })
   }
 
-  // Переключаем текст кнопки
   this.textContent =
     this.textContent === 'Показать еще' ? 'Скрыть' : 'Показать еще'
 })
@@ -139,4 +133,10 @@ document.getElementById('chat-btn2').onclick = function () {
 document.getElementById('close__prod').onclick = function () {
   document.querySelector('.product-container').style.display = 'none'
   document.body.classList.remove('body-no-scroll')
+}
+
+if (innerWidth <= 1440) {
+  document.querySelector('.main__container').onclick = function () {
+    document.querySelector('.container').style.display = 'none'
+  }
 }
