@@ -1,0 +1,60 @@
+@import '../scss/сolor.scss';
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 57px;
+  width: 100%;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 312px;
+}
+
+.footer__text-one {
+  text-align: center;
+  width: 218px;
+}
+
+.footer__text-three {
+  text-align: center;
+  width: 312px;
+}
+
+@media (min-width: 768px) {
+  .footer__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+		width: 100%;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 57px;
+  }
+
+  .footer__info {
+    display: flex;
+  }
+
+  .footer__text-one {
+    text-align: start;
+    width: 218px;
+    text-align: center;
+  }
+
+  .footer__text-three {
+    text-align: end;
+    width: 213px;
+    text-align: center;
+  }
+}

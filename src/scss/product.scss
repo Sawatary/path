@@ -1,0 +1,84 @@
+@import '../scss/сolor.scss';
+
+.product-container {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  justify-content: end;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar__product {
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  width: 320px;
+  height: 100%;
+  border-left: 1px solid #b8ffec;
+}
+
+.close__product {
+  cursor: pointer;
+  margin: 24px;
+}
+
+.product-form {
+  background-color: #fff;
+  width: 246px;
+  margin-left: 24px;
+}
+
+.product-form h2 {
+  font-family: 'TT Lakes Bold';
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.product-form input {
+  font-family: 'TT Lakes Regular';
+  width: 246px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.product-form textarea {
+  height: 100px;
+}
+
+.product-form .agreement {
+  font-family: 'TT Lakes Regular';
+  width: 288px;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-form .agreement a {
+  color: #ff007b;
+  text-decoration: none;
+}
+
+.product-form .agreement {
+  font-family: 'TT Lakes Regular';
+  width: 288px;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

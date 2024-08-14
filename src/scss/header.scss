@@ -1,0 +1,68 @@
+@import '../scss/сolor.scss';
+
+.header {
+  .line__768 {
+    display: none;
+  }
+  .line__320 {
+    margin-left: 10px;
+  }
+  .header__left {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+    .btn__hidden {
+      display: none;
+    }
+  }
+  .burger__btn,
+  .repair__btn {
+    padding: 16px;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px $opacity;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  width: 100%;
+  height: 88px;
+}
+
+@media (min-width: 768px) {
+  .line__320 {
+    display: none;
+  }
+  .header__left > .line__768 {
+    display: flex;
+  }
+  .header__right > .line__768 {
+    display: flex;
+  }
+  .header > .header__right {
+    .btn__hidden {
+      display: flex;
+      padding: 10px;
+    }
+  }
+  .logo {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    display: none;
+  }
+}

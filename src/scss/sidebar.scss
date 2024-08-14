@@ -1,0 +1,145 @@
+@import '../scss/сolor.scss';
+
+.body-no-scroll {
+  overflow-y: hidden;
+}
+
+.container {
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.3);
+  background-color: $white;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  position: absolute;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: $white;
+  margin-left: 22px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.sidebar__burger {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.sidebar__footer {
+  margin-top: 50px;
+}
+
+.contact__info {
+  .p__bold {
+    font-family: 'TT Lakes Bold';
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+}
+.sidebar__img {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.sidebar__nav {
+  margin-top: 32px;
+}
+
+.sidebar__list {
+  padding-left: 0;
+}
+
+.sidebar__list > li {
+  font-size: 16px;
+  padding-bottom: 28px;
+}
+.btn__hidden {
+  margin-right: 10px;
+}
+
+@media (min-width: 360px) {
+  .container {
+    display: none;
+    width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: none;
+    width: 320px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0);
+    position: fixed;
+    display: flex;
+    width: 280px;
+  }
+  .sidebar__burger {
+    display: none;
+  }
+  .sidebar {
+    margin-top: 35px;
+  }
+  // .container {
+  //   background-color: $white;
+  //   width: 280px;
+  //   display: flex;
+  // }
+
+  // .sidebar {
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex-grow: 1;
+  //   background-color: $white;
+  //   margin-left: 22px;
+  //   margin-top: 35px;
+  // }
+
+  // .sidebar__footer {
+  //   margin-top: 160px;
+  // }
+
+  // .contact__info {
+  //   .p__bold {
+  //     font-family: 'TT Lakes Bold';
+  //     font-size: 24px;
+  //     margin: 0;
+  //     padding-bottom: 15px;
+  //   }
+  // }
+  // .sidebar__img {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   margin-right: 10px;
+  // }
+
+  // .sidebar__nav {
+  //   margin-top: 32px;
+  // }
+
+  // .sidebar__list {
+  //   padding-left: 0;
+  // }
+
+  // .sidebar__list > li {
+  //   font-size: 16px;
+  //   padding-bottom: 28px;
+  // }
+  // .btn__hidden {
+  //   margin-right: 10px;
+  // }
+}

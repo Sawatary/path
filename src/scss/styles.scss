@@ -1,0 +1,70 @@
+@import '../scss/сolor.scss';
+
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('/src/fonts/TTLakes-Bold.eot');
+  src: url('/src/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/TTLakes-Bold.woff') format('woff'),
+    url('/src/fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('/src/fonts/TTLakes-Medium.eot');
+  src: url('/src/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/TTLakes-Medium.woff') format('woff'),
+    url('/src/fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('/src/fonts/TTLakes-Regular.eot');
+  src: url('/src/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/TTLakes-Regular.woff') format('woff'),
+    url('/src/fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: $min-gray;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-size: 16px;
+  font-family: 'TT Lakes Medium';
+  background-color: $clear-two;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+li {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+li:active{
+  opacity: 0.6;
+}
+
+a {
+  font-family: 'TT Lakes Medium';
+  text-decoration: none;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}

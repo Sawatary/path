@@ -1,0 +1,120 @@
+@import '../scss/сolor.scss';
+
+.slides__price {
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  padding: 0;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  button {
+    width: 119px;
+    height: 32px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+  p {
+    padding-left: 16px;
+    margin: 0;
+  }
+  div {
+    width: 100%;
+  }
+}
+
+.wrapper__price > .slides__price {
+  width: 240px;
+}
+
+.p__price {
+  p:nth-child(1) {
+    opacity: 0.5;
+  }
+}
+
+.p__title {
+  margin-top: 16px;
+
+  p:nth-child(1) {
+    opacity: 0.5;
+  }
+
+  p:nth-child(2) {
+    width: 228px;
+  }
+}
+
+.service-table {
+  display: none;
+}
+
+.price__info {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    width: 82px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper__price {
+    display: none;
+  }
+  .service-table {
+    display: inline-table;
+    font-family: 'TT Lakes Regular';
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 16px;
+  }
+
+  .service-table thead {
+    background-color: #f8f8f8;
+    text-align: left;
+  }
+
+  .service-table th,
+  .service-table td {
+    padding: 12px 15px;
+    text-align: start;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .service-table th {
+    font-size: 14px;
+    opacity: 0.5;
+  }
+
+  .service-table td {
+    font-size: 16px;
+  }
+
+  .service-table td.price {
+    font-family: 'TT Lakes Regular';
+  }
+
+  .service-table td button {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .service-table {
+    max-width: 1200px;
+  }
+}

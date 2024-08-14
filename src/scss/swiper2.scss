@@ -1,0 +1,66 @@
+@import '../scss/сolor.scss';
+
+.slides__technology {
+  width: 240px;
+  height: 142px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+#swiper__link-technology {
+  img {
+    margin-right: 10px;
+  }
+  margin: 32px;
+}
+
+.card__title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  font-size: 16px;
+}
+
+.card__icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hidden-technology-1440 {
+    display: none;
+  }
+
+  .hidden-technology-768 {
+    display: none;
+  }
+  .slides__technology {
+    width: 192px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hidden-technology-768 {
+    display: flex;
+  }
+  .hidden-technology-1440 {
+    display: none;
+  }
+
+  .slides__technology {
+    width: 240px;
+  }
+}
