@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Web Core</title>
+  <link href="style.css" rel="stylesheet"></head>
+  <body>
+    <div class="test">
+    <header class="header">
+      <div class="header__left">
+        <button id="menu-button" class="header__btn burger__btn">
+          <img src="./img/menu.svg" alt="">
+        </button>
+        <img class="line__768" src="./img/line.svg" alt="">
+        <a href=""><img class="logo" src="./img/logo.png" alt=""></a>
+      </div>
+      <img class="line__320" src="./img/line.svg" alt="">
+      <div class="header__right">
+        <button id="call-btn" class="header__btn call__btn btn__hidden"><img src="./img/call.svg" alt=""></button>
+        <button id="chat-btn" class="header__btn chat__btn btn__hidden"><img src="./img/chat.svg" alt=""></button>
+        <button class="header__btn profile__btn btn__hidden"><img src="./img/profile.svg" alt=""></button>
+        <img class="line__768" src="./img/line.svg" alt="">
+        <button class="header__btn repair__btn"><img src="./img/repair.svg" alt=""></button>
+        <button class="header__btn checkstatus__btn"><img src="./img/checkstatus.svg" alt=""></button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="sidebar">
+          <div class="sidebar__img">
+            <div class="">
+            <button id="close-button" class="sidebar__burger"><img src="./img/burger.svg" alt=""></button>
+            <img src="./img/logo.png" alt="logo">
+          </div>
+            <button class="sidebar__search"><img src="./img/search.svg" alt="search"></button>
+          </div>
+          <nav class="sidebar__nav">
+            <ul class="sidebar__list">
+              <li><a href="#">Ремонт техники</a></li>
+              <li><a href="#">Услуги и сервисы</a></li>
+              <li><a href="#">Корпоративным клиентам</a></li>
+              <li><a href="#">Продажа техники</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Наши сервисные центры</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="sidebar__footer">
+            <div class="sidebar__btn">
+              <button id="call-btn2" class="footer__sidebar btn__hidden"><img src="./img/call.svg" alt=""></button>
+              <button id="chat-btn2" class="footer__sidebar btn__hidden"><img src="./img/chat.svg" alt=""></button>
+              <button class="footer__sidebar repair__btn btn__hidden"><img src="./img/profile.svg" alt=""></button>
+            </div>
+            <div class="contact__info">
+              <p>mail@cps.com</p>
+              <p class="p__bold">8 800 890 8900</p>
+              <p>RU EN CH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__container">
+        <div class="main__section">
+        <div class="main__title">
+          <img src="./img/light.svg" alt="light">
+          <h1>Услуги и сервисы</h1>
+        </div>
+        <div class="section__btn">
+          <p>Оставить заявку</p>
+							<button id="btn__">
+								<img src="img/repair.svg" alt="repair">
+							</button>
+							<p>Статус Ремонта</p>
+							<button>
+								<img src="img/checkstatus.svg" alt="check">
+							</button>
+        </div>
+      </div>
+        <div class="main__tabs">
+          <button class="main__tab--active"> Ремонтируемые устройства </button>
+          <button class="main__tab">Дополнительные услуги</button>
+          <button class="main__tab">Цены на услуги</button>
+          <button class="main__tab">Специальные акции</button>
+          <button class="main__tab">Адреса сервисных центров</button>
+          <button class="main__tab">Специальные цены</button>
+          <button class="main__tab">Отзывы</button>
+        </div>
+        <aside class="services">
+          <div class="services__description">
+            <div class="services__text">
+              <p class="text-part">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="text-part__768">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера,
+                <span class="text-part text-hidden">что подтверждает большое количество постоянных клиентов. Мы
+                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь, советуют нас родным и близким.</span></p>
+              <p class="hidden__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus impedit, eius illum ipsum enim quibusdam incidunt eum cupiditate expedita veritatis soluta adipisci harum, vel, quod error ipsam! Expedita, doloremque officiis.</p>
+              <div id="services__link">
+                <img id="mySVG" src="./img/arraw.svg" alt="">
+                <button id="toggleBtn3">Читать еще</button>
+              </div>
+            </div>
+          </div>
+          <img class="services__img" src="./img/main.png" alt="main">
+        </aside>
+        <div class="swiper mySwiper">
+          <div class="swiper-title">
+            <h3>Ремонт техники различных брендов</h3>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/lenovo.png" alt="lenovo">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide"><img src="./img/samsung.png" alt="samsung">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide"><img src="./img/apple.png" alt="apple">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide"><img src="./img/viewsonic.png" alt="viewsonic">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide"><img src="./img/bosch.png" alt="bosch">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide"><img src="./img/hp.png" alt="hp">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide hidden-slide hidden-slide-768"><img src="./img/lenovo.png" alt="acer">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide hidden-slide hidden-slide-768"><img src="./img/sony.png" alt="sony">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide hidden-slide hidden-slide-1440"><img src="./img/apple.png" alt="">
+              <img src="./img/go.svg" alt="go"></div>
+            <div class="swiper-slide hidden-slide hidden-slide-1440"><img src="./img/sony.png" alt="">
+              <img src="./img/go.svg" alt="go"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div id="swiper__link">
+            <img id="mySVG1" src="./img/arraw.svg" alt="">
+            <button id="toggleBtn">Показать еще</button>
+          </div>
+        </div>
+        <div id="swiper__technology" class="swiper mySwiper">
+          <div class="swiper-title">
+            <h3>Ремонт различных видов техники</h3>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slides__technology">
+              <p class="card__title"> Ремонт ноутбуков </p>
+              <div class="card__icon">
+                <div class="icon-circle">
+                  <img src="./img/go.svg" alt="">
+                </div> </div></div>
+            <div class="swiper-slide slides__technology">
+              <p class="card__title"> Ремонт ноутбуков </p>
+              <div class="card__icon">
+                <div class="icon-circle">
+                  <img src="./img/go.svg" alt="">
+                </div> </div></div>
+            <div class="swiper-slide slides__technology">
+              <p class="card__title"> Ремонт ноутбуков </p>
+              <div class="card__icon">
+                <div class="icon-circle">
+                  <img src="./img/go.svg" alt="">
+                </div> </div></div>
+            <div class="swiper-slide slides__technology hidden-technology hidden-technology-768">
+              <p class="card__title"> Ремонт ноутбуков </p>
+              <div class="card__icon">
+                <div class="icon-circle">
+                  <img src="./img/go.svg" alt="">
+                </div> </div></div>
+            <div class="swiper-slide slides__technology hidden-technology hidden-technology-1440">
+              <p class="card__title"> Ремонт ноутбуков </p>
+              <div class="card__icon">
+                <div class="icon-circle">
+                  <img src="./img/go.svg" alt="">
+                </div> </div></div>
+            <div class="swiper-slide slides__technology hidden-technology hidden-technology-1440">
+              <p class="card__title"> Ремонт ноутбуков </p>
+              <div class="card__icon">
+                <div class="icon-circle">
+                  <img src="./img/go.svg" alt="">
+                </div> </div></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div id="swiper__link">
+            <img id="mySVG1" src="./img/arraw.svg" alt="">
+            <button id="toggleBtn2">Показать еще</button>
+          </div>
+        </div>
+        <div id="swiper__price" class="swiper mySwiper">
+          <div class="swiper-title">
+            <h3>Цены на услуги</h3>
+          </div>
+          <table class="service-table">
+            <thead>
+                <tr>
+                    <th>Ремонтные услуги</th>
+                    <th>Цена</th>
+                    <th>Срок</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Диагностика</td>
+                    <td class="price">Бесплатно</td>
+                    <td>30 мин</td>
+                    <td><button><img src="./img/buy.png" alt="buy"></button></td>
+                </tr>
+                <tr>
+                    <td>Замена дисплея</td>
+                    <td class="price">1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td><button><img src="./img/buy.png" alt="buy"></button></td>
+                </tr>
+                <tr>
+                    <td>Замена полифонического динамика</td>
+                    <td class="price">1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td><button><img src="./img/buy.png" alt="buy"></button></td>
+                </tr>
+                <tr>
+                    <td>Тестирование с выдачей технического заключения</td>
+                    <td class="price">1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td><button><img src="./img/buy.png" alt="buy"></button></td>
+                </tr>
+                <tr>
+                    <td>Замена программного обеспечения</td>
+                    <td class="price">1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td><button><img src="./img/buy.png" alt="buy"></button></td>
+                </tr>
+            </tbody>
+        </table>
+          <div class="swiper-wrapper wrapper__price">
+            <div class="swiper-slide slides__price">
+              <div class="p__title">
+                <p>Ремонтные услуги</p>
+                <p>Тестирование с выдачей технического заключения</p>
+              </div>
+              <div class="p__price">
+                <p>Цена</p>
+                <p>Бесплатно</p>
+              </div>
+              <div class="price__info">
+                <p>Срок<br>30-120 мин</p>
+                <button><img src="./img/buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="swiper-slide slides__price">
+              <div class="p__title">
+                <p>Ремонтные услуги</p>
+                <p>Тестирование с выдачей технического заключения</p>
+              </div>
+              <div class="p__price">
+                <p>Цена</p>
+                <p>Бесплатно</p>
+              </div>
+              <div class="price__info">
+                <p>Срок<br>30-120 мин</p>
+                <button><img src="./img/buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="swiper-slide slides__price">
+              <div class="p__title">
+                <p>Ремонтные услуги</p>
+                <p>Тестирование с выдачей технического заключения</p>
+              </div>
+              <div class="p__price">
+                <p>Цена</p>
+                <p>Бесплатно</p>
+              </div>
+              <div class="price__info">
+                <p>Срок<br>30-120 мин</p>
+                <button><img src="./img/buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="swiper-slide slides__price">
+              <div class="p__title">
+                <p>Ремонтные услуги</p>
+                <p>Тестирование с выдачей технического заключения</p>
+              </div>
+              <div class="p__price">
+                <p>Цена</p>
+                <p>Бесплатно</p>
+              </div>
+              <div class="price__info">
+                <p>Срок<br>30-120 мин</p>
+                <button><img src="./img/buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="swiper-slide slides__price">
+              <div class="p__title">
+                <p>Ремонтные услуги</p>
+                <p>Тестирование с выдачей технического заключения</p>
+              </div>
+              <div class="p__price">
+                <p>Цена</p>
+                <p>Бесплатно</p>
+              </div>
+              <div class="price__info">
+                <p>Срок<br>30-120 мин</p>
+                <button><img src="./img/buy.png" alt=""></button>
+              </div>
+            </div>
+            <div class="swiper-slide slides__price">
+              <div class="p__title">
+                <p>Ремонтные услуги</p>
+                <p>Тестирование с выдачей технического заключения</p>
+              </div>
+              <div class="p__price">
+                <p>Цена</p>
+                <p>Бесплатно</p>
+              </div>
+              <div class="price__info">
+                <p>Срок<br>30-120 мин</p>
+                <button><img src="./img/buy.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <aside class="block__extra-info"><p>Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.</p>
+          <div class="info__link">
+            <a href="#">Получить коммерческое предложение</a>
+            <img src="./img/more.svg" alt="more"> </div></aside>
+        <footer class="footer">
+          <div class="footer__info">
+            <p class="footer__text-one">© 2019 CPS Разработано командой Apesong
+            </p>
+            <p class="footer__text-two">Политика конфиденциальности</p>
+            <p class="footer__text-three">Информация, размещенная на данной странице, не является публичной
+              офертой</p>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <div class="feedback-container">
+      <div class="sidebar__feedback">
+        <button id="close__feed" class="close__feedback"><img src="./img/burger.svg" alt="burger"></button>
+        <div class="feedback-form">
+        <h2>Обратная связь</h2>
+              <form>
+                  <input type="text" placeholder="Имя" required>
+                  <input type="tel" placeholder="Телефон" required>
+                  <input type="email" placeholder="Электронная почта" required>
+                  <textarea placeholder="Сообщение" required></textarea>
+                  <p class="agreement">
+                      Нажимая "отправить", вы даете согласие на <a href="">обработку персональных данных</a> и соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+                  </p>
+                  <button type="submit" class="submit-btn"><img src="./img/feedback.svg" alt="feedback"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <div class="sidebar__product">
+              <button id="close__prod" class="close__product"><img src="./img/burger.svg" alt=""></button>
+              <div class="product-form">
+                <h2>Заказать звонок</h2>
+                <form>
+                  <input type="tel" placeholder="Телефон" required>
+                  <p class="agreement">
+                    Нажимая "отправить", вы даете согласие на <a href="">обработку персональных данных</a> и соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+                </p>
+                  <button type="submit" class="submit-btn"><img src="./img/feedback.svg" alt="feedback"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+  </div>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
