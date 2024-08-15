@@ -140,3 +140,14 @@ document.getElementById('close__prod').onclick = function () {
   document.querySelector('.product-container').style.display = 'none'
   document.body.classList.remove('body-no-scroll')
 }
+
+innerWidth <= 1440 &&
+  (document.querySelector('.main__container').onclick = function () {
+    document.querySelector('.container').style.display = 'none'
+  })
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    document.querySelector('.container').style.display = 'none'
+  }
+})

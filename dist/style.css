@@ -134,24 +134,23 @@ h1 {
 .main__tab {
   font-family: 'TT Lakes Regular';
   color: #1b1c21;
-  margin: 7px;
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 12px; }
 
 .main__tab:hover {
-  color: rgba(0, 0, 0, 0.4); }
-
-.main__tab--active {
-  padding: 5px;
-  color: rgba(0, 0, 0, 0.4);
-  white-space: nowrap;
-  height: 40px;
   border: 2px solid #b8ffec;
   border-radius: 5px;
-  background-color: #ffffff; }
+  padding: 6px; }
+
+.main__tab:focus {
+  border: 2px solid #b8ffec;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 6px; }
 
 .section__btn {
   display: none; }
@@ -256,8 +255,6 @@ a {
     overflow-y: visible; }
     .main__tabs button:last-child {
       text-align: start; }
-  .main__tab {
-    margin: 7px; }
   .services {
     margin-top: 50px; }
   .services__img {
