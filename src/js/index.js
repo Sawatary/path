@@ -140,3 +140,9 @@ if (innerWidth <= 1440) {
     document.querySelector('.container').style.display = 'none'
   }
 }
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    document.querySelector('.container').style.display = 'none'
+  }
+})

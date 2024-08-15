@@ -40,26 +40,25 @@ h1 {
 .main__tab {
   font-family: 'TT Lakes Regular';
   color: $black;
-  margin: 7px;
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  padding: 8px;
 }
 
 .main__tab:hover {
-  color: $clear;
-}
-
-.main__tab--active {
-  padding: 5px;
-  color: $clear;
-  white-space: nowrap;
-  height: 40px;
   border: 2px solid $border;
   border-radius: 5px;
-  background-color: $white;
+  padding: 8px;
+}
+
+.main__tab:focus {
+  border: 2px solid $border;
+  border-radius: 5px;
+  color: $clear;
+  padding: 8px;
 }
 
 .section__btn {
